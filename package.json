@@ -1,0 +1,26 @@
+{
+  "name": "js-utilities",
+  "version": "1.0.0",
+  "description": "A collection of utilities and services writen in javascript",
+  "main": "index.js",
+  "repository": "git@github.com:Tburm/js-utilities.git",
+  "author": "troyb.eth",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**",
+      "**/hardhat",
+      "**/hardhat/**",
+      "**/hardhat-ts",
+      "**/hardhat-ts/**"
+    ]
+  },
+  "scripts": {
+    "farm-listener:start": "yarn workspace farm-listener start"
+  }
+}

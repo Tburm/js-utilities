@@ -1,0 +1,11 @@
+{
+  "name": "farm-listener",
+  "version": "1.0.0",
+  "description": "Service that listens to many chef-like contracts and alerts when new reward pools are created",
+  "main": "src/index.js",
+  "author": "troyb.eth",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
